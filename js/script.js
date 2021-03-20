@@ -32,8 +32,10 @@ function render() {
         return `
         <article class='card'>
             <h1>${question.question}</h1>
-            <p>${question.incorrect_answers}</p>
-            <p>${question.correct_answer}</p>
+            <p>${`<button id='multChoice' class='incorrectAnswer'>a). </button>`+question.incorrect_answers[0]}</p>
+            <p>${`<button id='multChoice' class='incorrectAnswer'>b). </button>` +question.incorrect_answers[1]}</p>
+            <p>${`<button id='multChoice' class='incorrectAnswer'>c). </button>`+question.incorrect_answers[2]}</p>
+            <p>${`<button id='multChoice' class='correctAnswer'>d). </button>`+question.correct_answer}</p>
         </article>        
         `;
     });
