@@ -5,7 +5,10 @@ const BASE_URL = 'https://opentdb.com/api.php?amount=12&category=12&type=multipl
 let questions;
 // Cached Element References - parts of the dom that get touched
 const $questions = $('#questions');
-// Event Listenters - capture and respond to events i.e. user clicks
+
+// DOM Elements
+
+// Event Listenters - capture and respond to events i.e. user clic
 
 // Functions
 init();
@@ -18,7 +21,6 @@ function getData() {
     $.ajax(BASE_URL)
         .then(function (data){
             questions = data.results;
-            console.log(questions)
             render();
         }, function (error) {
             console.log(error);
@@ -28,10 +30,10 @@ function getData() {
 
 function render() {
     const html = questions.map(function (question) {
-        console.log(questions)
         return `
         <article class='card'>
             <h1>${question.question}</h1>
+            <br>
             <p>${`<button id='multChoice' class='incorrectAnswer'>a). </button>`+question.incorrect_answers[0]}</p>
             <p>${`<button id='multChoice' class='incorrectAnswer'>b). </button>` +question.incorrect_answers[1]}</p>
             <p>${`<button id='multChoice' class='incorrectAnswer'>c). </button>`+question.incorrect_answers[2]}</p>
