@@ -9,11 +9,14 @@ Do you live for New Release Fridays on music platforms? Do you watch recaps of t
 - jQuery
 - Trivia Database API
 
-## Wireframe
-![wireframe](./imgs/wireframe.png)
+## Screenshots
+![wireframe](./imgs/wireframe.png) Here is the wireframe.
+
+![app](./imgs/app.png) Here is a screenshot of the app. 
+
 
 ## Getting Started
-[Click here](#) to get started
+[Click here]('https://niladrisgithub.github.io/musicaltrivia/') to get started!
 
 ## Future Enhancements
-
+One thing to change for the future is to have the multiple choice elements mixed around instead of the correct answer being listed in the same spot for each question. 

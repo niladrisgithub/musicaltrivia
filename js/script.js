@@ -9,6 +9,12 @@ const $questions = $('#questions');
 // DOM Elements
 
 // Event Listenters - capture and respond to events i.e. user clic
+$('.incorrectAnswer').on('click', function(){
+    alert('Incorrect answer, try again!')
+});
+$('.correctAnswer').on('click', function(){
+    alert('Good work!')
+});
 
 // Functions
 init();
@@ -34,10 +40,10 @@ function render() {
         <article class='card'>
             <h1>${question.question}</h1>
             <br>
-            <p>${`<button id='multChoice' class='incorrectAnswer'>a). </button>`+question.incorrect_answers[0]}</p>
-            <p>${`<button id='multChoice' class='incorrectAnswer'>b). </button>` +question.incorrect_answers[1]}</p>
-            <p>${`<button id='multChoice' class='incorrectAnswer'>c). </button>`+question.incorrect_answers[2]}</p>
-            <p>${`<button id='multChoice' class='correctAnswer'>d). </button>`+question.correct_answer}</p>
+            <p>${`<button id='multChoice' class='incorrectAnswer'>a).</button>`+question.incorrect_answers[0]}</p>
+            <p>${`<button id='multChoice' class='incorrectAnswer'>b).</button>` +question.incorrect_answers[1]}</p>
+            <p>${`<button id='multChoice' class='incorrectAnswer'>c).</button>`+question.incorrect_answers[2]}</p>
+            <p>${`<button id='multChoice' class='correctAnswer'>d).</button>`+question.correct_answer}</p>
         </article>        
         `;
     });
