@@ -17,7 +17,8 @@ function init() {
 function getData() {
     $.ajax(BASE_URL)
         .then(function (data){
-            questions = data;
+            questions = data.results;
+            console.log(questions)
             render();
         }, function (error) {
             console.log(error);
@@ -26,12 +27,13 @@ function getData() {
 
 
 function render() {
-    const html = questions.map(function(question){
+    const html = questions.map(function (question) {
+        console.log(questions)
         return `
         <article class='card'>
-            <h1>${question.results.question}</h1>
-            <p>${question.response_code.results.incorrect_answers}</p>
-            <p>${question.response_code.results.correct_answers}</p>
+            <h1>${question.question}</h1>
+            <p>${question.incorrect_answers}</p>
+            <p>${question.correct_answer}</p>
         </article>        
         `;
     });
