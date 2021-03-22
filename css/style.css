@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Arial Narrow Bold', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -21,6 +21,7 @@ header {
     padding-left: 25px;
     background-color: rgb(51, 50, 50);
     color: #fff;
+    font-size: large;
 }
 
 main {

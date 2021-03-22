@@ -10,9 +10,11 @@ Do you live for New Release Fridays on music platforms? Do you watch recaps of t
 - Trivia Database API
 
 ## Screenshots
-![wireframe](./imgs/wireframe.png) Here is the wireframe.
+Here is the wireframe.
+![wireframe](./imgs/wireframe.png) 
 
-![app](./imgs/app.png) Here is a screenshot of the app. 
+Here is a screenshot of the app. 
+![app](./imgs/app.png) 
 
 
 ## Getting Started
@@ -20,3 +22,4 @@ Do you live for New Release Fridays on music platforms? Do you watch recaps of t
 
 ## Future Enhancements
 One thing to change for the future is to have the multiple choice elements mixed around instead of the correct answer being listed in the same spot for each question. 
+Another element to work on for the future, is to have a question card disappear after the user has answered the question correctly.

@@ -7,14 +7,21 @@ let questions;
 const $questions = $('#questions');
 
 // DOM Elements
+const $incorrectAnswer = $('.incorrectAnswer');
+const $correctAnswer = $('.correctAnswer');
+const $button = $('button');
 
-// Event Listenters - capture and respond to events i.e. user clic
-$('.incorrectAnswer').on('click', function(){
-    alert('Incorrect answer, try again!')
+// Event Listenters - capture and respond to events i.e. user click
+$incorrectAnswer.on('click', function(){
+    console.log('So close, try that one again!')
 });
-$('.correctAnswer').on('click', function(){
-    alert('Good work!')
+$correctAnswer.on('click', function(){
+    console.log('Good work! You got it! Try another one.')
 });
+
+$button.on('click', function(){
+    console.log('button alert works!')
+})
 
 // Functions
 init();
@@ -40,10 +47,10 @@ function render() {
         <article class='card'>
             <h1>${question.question}</h1>
             <br>
-            <p>${`<button id='multChoice' class='incorrectAnswer'>a).</button>`+question.incorrect_answers[0]}</p>
-            <p>${`<button id='multChoice' class='incorrectAnswer'>b).</button>` +question.incorrect_answers[1]}</p>
-            <p>${`<button id='multChoice' class='incorrectAnswer'>c).</button>`+question.incorrect_answers[2]}</p>
-            <p>${`<button id='multChoice' class='correctAnswer'>d).</button>`+question.correct_answer}</p>
+            <p>${`<button id='multChoice' class='incorrectAnswer' onclick="alert('Nice try, but give that question another go.')">a).</button>`+question.incorrect_answers[0]}</p>
+            <p>${`<button id='multChoice' class='incorrectAnswer' onclick="alert('Nice try, but give that question another go.')">b).</button>` +question.incorrect_answers[1]}</p>
+            <p>${`<button id='multChoice' class='incorrectAnswer' onclick="alert('Nice try, but give that question another go.')">c).</button>`+question.incorrect_answers[2]}</p>
+            <p>${`<button id='multChoice' class='correctAnswer' onclick="alert('Good work, you got it! Try out another question!')">d).</button>`+question.correct_answer}</p>
         </article>        
         `;
     });
