@@ -12,16 +12,7 @@ const $correctAnswer = $('.correctAnswer');
 const $button = $('button');
 
 // Event Listenters - capture and respond to events i.e. user click
-$incorrectAnswer.on('click', function(){
-    console.log('So close, try that one again!')
-});
-$correctAnswer.on('click', function(){
-    console.log('Good work! You got it! Try another one.')
-});
 
-$button.on('click', function(){
-    console.log('button alert works!')
-})
 
 // Functions
 init();
