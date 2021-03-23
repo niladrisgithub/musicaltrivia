@@ -18,7 +18,7 @@ Here is a screenshot of the app.
 
 
 ## Getting Started
-[Click here]("#https://niladrisgithub.github.io/musicaltrivia/") to get started!
+[Click here](https://niladrisgithub.github.io/musicaltrivia/) to get started!
 
 ## Future Enhancements
 One thing to change for the future is to have the multiple choice elements mixed around instead of the correct answer being listed in the same spot for each question. 
