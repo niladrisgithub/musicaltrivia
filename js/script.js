@@ -23,7 +23,7 @@ function init() {
 
 function getData() {
     $.ajax(BASE_URL)
-        .then(function (data){
+        .then(function (data) {
             questions = data.results;
             render();
         }, function (error) {
