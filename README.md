@@ -21,5 +21,5 @@ Here is a screenshot of the app.
 [Click here](https://niladrisgithub.github.io/musicaltrivia/) to get started!
 
 ## Future Enhancements
-One thing to change for the future is to have the multiple choice elements mixed around instead of the correct answer being listed in the same spot for each question. 
-Another element to work on for the future, is to have a question card disappear after the user has answered the question correctly.
+- One thing to change for the future is to have the multiple choice elements mixed around instead of the correct answer being listed in the same spot for each question. 
+- Another element to work on for the future, is to have a question card disappear after the user has answered the question correctly.
