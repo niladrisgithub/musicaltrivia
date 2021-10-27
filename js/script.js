@@ -1,5 +1,5 @@
 // Constant Variables - data that never changes
-const BASE_URL = 'https://opentdb.com/api.php?amount=12&category=12&type=multiple';
+const BASE_URL = 'https://opentdb.com/api.php?amount=9&category=12&type=multiple';
 
 // State Variables - data that changes
 let questions;
